@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic The Hedgehog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-sonic-blue {
+            background-color: #0078d7;
+        }
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
+        .animate-spin {
+            animation: spin 4s linear infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(-25%);
+                animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            }
+            50% {
+                transform: translateY(0);
+                animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            }
+        }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+    <header class="bg-sonic-blue text-white shadow w-full">
+        <div class="container mx-auto p-5 flex items-center justify-between">
+            <h1 class="text-3xl font-bold">Sonic - El Erizo</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#intro" class="hover:text-gray-200">Introducción</a></li>
+                    <li><a href="#history" class="hover:text-gray-200">Historia</a></li>
+                    <li><a href="#games" class="hover:text-gray-200">Juegos</a></li>
+                    <li><a href="#media" class="hover:text-gray-200">Medios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto flex-grow p-5">
+        <section id="intro" class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-bold mb-4">Introducción</h2>
+            <p>Sonic es un erizo azul y el protagonista de la serie de videojuegos creada por Sega. Es conocido por su velocidad y espíritu aventurero.</p>
+            <img src="https://via.placeholder.com/600x400?text=Sonic" alt="Sonic" class="w-full h-auto mt-4">
+        </section>
+        
+        <section id="history" class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-bold mb-4">Historia</h2>
+            <p>Sonic ha tenido muchas aventuras a lo largo de los años, luchando contra el malvado Doctor Eggman y haciendo nuevos amigos. Desde su debut en 1991, ha sido un ícono de los videojuegos.</p>
+            <ul class="list-disc list-inside">
+                <li>1991: Primer juego de Sonic</li>
+                <li>1992: Sonic the Hedgehog 2</li>
+                <li>1994: Sonic & Knuckles</li>
+                <li>1998: Sonic Adventure</li>
+                <li>2017: Sonic Mania</li>
+            </ul>
+            <img src="https://via.placeholder.com/600x400?text=Historia+de+Sonic" alt="Sonic Historia" class="w-full h-auto mt-4">
+        </section>
+        
+        <section id="games" class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-bold mb-4">Juegos</h2>
+            <p>Desde su debut en 1991, Sonic ha aparecido en numerosos videojuegos que abarcan diversas plataformas y géneros. Algunos de los más populares incluyen:</p>
+            <ol class="list-decimal list-inside">
+                <li>Sonic the Hedgehog</li>
+                <li>Sonic the Hedgehog 2</li>
+                <li>Sonic CD</li>
+                <li>Sonic Adventure</li>
+                <li>Sonic Generations</li>
+            </ol>
+            <img src="https://via.placeholder.com/600x400?text=Juegos+de+Sonic" alt="Sonic Juegos" class="w-full h-auto mt-4">
+        </section>
+
+        <section id="media" class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4">Medios</h2>
+            <p>Además de los videojuegos, Sonic ha protagonizado series animadas, cómics y una película. Algunas de las apariciones más destacadas incluyen:</p>
+            <ul class="list-disc list-inside">
+                <li>Sonic SatAM (Serie animada)</li>
+                <li>Adventures of Sonic the Hedgehog (Serie animada)</li>
+                <li>Sonic X (Anime)</li>
+                <li>La película de Sonic (2020)</li>
+            </ul>
+            <img src="https://via.placeholder.com/600x400?text=Medios+de+Sonic" alt="Sonic Medios" class="w-full h-auto mt-4">
+        </section>
+    </main>
+
+    <footer class="bg-sonic-blue text-white shadow w-full mt-auto">
+        <div class="container mx-auto p-5 text-center">
+            <p>&copy; 2025 Sonic - El Erizo. Todos los derechos reservados.</p>
+            <div class="animate-bounce mt-4">
+                <img src="https://via.placeholder.com/50x50?text=Sonic" alt="Sonic Saltando" class="w-16 h-auto mx-auto">
+            </div>
+            <div class="animate-spin mt-4">
+                <img src="https://via.placeholder.com/50x50?text=Anillo" alt="Anillo Girando" class="w-16 h-auto mx-auto">
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        @media (min-width: 640px) {
+            main {
+                padding: 10px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            main {
+                padding: 20px;
+            }
+
+            section {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</body>
+</html>
