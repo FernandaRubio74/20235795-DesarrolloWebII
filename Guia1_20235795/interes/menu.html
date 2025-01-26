@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Responsive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <nav class="bg-gray-800 rounded-lg p-4 mx-auto w-full md:w-3/4 lg:w-2/3 xl:w-1/2 flex items-center justify-between">
+        <div class="text-lg font-bold">Logo</div>
+        <div class="hidden md:flex space-x-4">
+            <a href="#" class="hover:text-gray-400">About</a>
+            <a href="#" class="hover:text-gray-400">Articles</a>
+            <a href="#" class="hover:text-gray-400">Projects</a>
+            <a href="#" class="hover:text-gray-400">Speaking</a>
+            <a href="#" class="hover:text-gray-400">Uses</a>
+        </div>
+        <div class="md:hidden">
+            <input type="checkbox" id="menu-toggle" class="hidden">
+            <label for="menu-toggle" class="cursor-pointer">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </label>
+            <div id="menu" class="hidden absolute bg-gray-800 rounded-lg p-4 space-y-4 mt-4 right-0 w-48">
+                <a href="#" class="block py-2 px-4 text-sm hover:text-gray-400">About</a>
+                <a href="#" class="block py-2 px-4 text-sm hover:text-gray-400">Articles</a>
+                <a href="#" class="block py-2 px-4 text-sm hover:text-gray-400">Projects</a>
+                <a href="#" class="block py-2 px-4 text-sm hover:text-gray-400">Speaking</a>
+                <a href="#" class="block py-2 px-4 text-sm hover:text-gray-400">Uses</a>
+            </div>
+        </div>
+    </nav>
+
+    <style>
+        #menu-toggle:checked + label + #menu {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+        }
+    </style>
+</body>
+</html>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Desarrollo Web</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -9,40 +10,50 @@
         .bg-purple-900 {
             background-color: #2d1b69;
         }
+
         .text-purple-300 {
             color: #a05afe;
         }
     </style>
 </head>
+
 <body class="bg-purple-900 text-gray-100 flex flex-col min-h-screen">
     <header class="bg-white shadow">
         <div class="container mx-auto p-5">
-            <h1 class="text-3xl font-bold text-purple-300">Desarrollo Web II</h1>
+            <h1 class="text-3xl font-bold text-purple-300">Desarrollo Web II - Portafolio</h1>
         </div>
     </header>
 
-    <main class="container mx-auto mt-8 p-5 flex-grow">
-        <h2 class="font-bold mb-4" >Estudiante: María Fernanda Rubio Romero</h2>
-        <h2 class="text-2xl font-bold " >Carnet: 20235795</h2>
+    <main class="container mx-auto p-5 flex-grow">
+        <h2 class="text-2xl font-bold mb-4">Estudiante: María Fernanda Rubio Romero</h2>
+        <h2 class="text-2xl font-bold mb-7">Carnet: 20235795</h2>
 
 
         <article class="bg-black p-6 rounded-lg shadow-md mb-6">
-            <h2 class="text-2xl font-bold mb-2 text-purple-300">Proyecto 1</h2>
-            <p class="text-gray-400 mb-4">Descripción breve del proyecto</p>
-            <a href="https://example.com/proyecto1" class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-500">Ver Proyecto</a>
+            <h2 class="text-2xl font-bold mb-2 text-purple-300">Guía 1</h2>
+            <p class="text-gray-400 mb-4">Desarrollo de ejercicios con 'Tailwindcss' </p>
+            <div class="grid h-30 grid-cols-3 content-evenly gap-2 items-center">
+                <a href="/Guia1_20235795/producto/producto.html"
+                    class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-500">Producto</a>
+                <a href="/Guia1_20235795/galeria/galeria.html"
+                    class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-500">Galeria</a>
+                <a href="/Guia1_20235795/login/login.html"
+                    class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-500 ">Login</a>
+                <a href="/Guia1_20235795/pricing-card/pricing.html"
+                    class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-500">Pricing</a>
+                <a href="/Guia1_20235795/interes/index.html"
+                    class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-500">Interes</a>
+            </div>
         </article>
-        
-        <article class="bg-black p-6 rounded-lg shadow-md mb-6">
-            <h2 class="text-2xl font-bold mb-2 text-purple-300">Proyecto 2</h2>
-            <p class="text-gray-400 mb-4">Descripción breve del proyecto</p>
-            <a href="https://example.com/proyecto2" class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-500">Ver Proyecto</a>
-        </article>
+
+
     </main>
 
-    <footer class="bg-white shadow">
+    <footer class="bg-purple-200">
         <div class="container mx-auto p-5">
-            <p class="text-center text-black">&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+            <p class="text-center text-black font-rounded"> &copy; 2025 Desarrollo Web II</p>
         </div>
     </footer>
 </body>
+
 </html>

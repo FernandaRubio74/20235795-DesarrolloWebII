@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,123 +8,303 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         .bg-sonic-blue {
-            background-color: #0078d7;
-        }
-        .animate-bounce {
-            animation: bounce 2s infinite;
-        }
-        .animate-spin {
-            animation: spin 4s linear infinite;
-        }
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(-25%);
-                animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-            }
-            50% {
-                transform: translateY(0);
-                animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-            }
-        }
-        @keyframes spin {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
+            background-color: #254087;
         }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
-    <header class="bg-sonic-blue text-white shadow w-full">
+
+<body class="bg-sonic-blue text-gray-800 flex flex-col min-h-screen">
+    <header class="bg-black text-white shadow w-full">
         <div class="container mx-auto p-5 flex items-center justify-between">
-            <h1 class="text-3xl font-bold">Sonic - El Erizo</h1>
-            <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#intro" class="hover:text-gray-200">Introducción</a></li>
-                    <li><a href="#history" class="hover:text-gray-200">Historia</a></li>
-                    <li><a href="#games" class="hover:text-gray-200">Juegos</a></li>
-                    <li><a href="#media" class="hover:text-gray-200">Medios</a></li>
-                </ul>
-            </nav>
+            <img src="img/sonic-team.png" alt="sonic-team">
+            <img src="img/5-sonic-wait2-60px.gif" alt="sonic-gif">
+
         </div>
     </header>
 
     <main class="container mx-auto flex-grow p-5">
         <section id="intro" class="bg-white p-6 rounded-lg shadow-md mb-6">
-            <h2 class="text-2xl font-bold mb-4">Introducción</h2>
-            <p>Sonic es un erizo azul y el protagonista de la serie de videojuegos creada por Sega. Es conocido por su velocidad y espíritu aventurero.</p>
-            <img src="https://via.placeholder.com/600x400?text=Sonic" alt="Sonic" class="w-full h-auto mt-4">
-        </section>
-        
-        <section id="history" class="bg-white p-6 rounded-lg shadow-md mb-6">
-            <h2 class="text-2xl font-bold mb-4">Historia</h2>
-            <p>Sonic ha tenido muchas aventuras a lo largo de los años, luchando contra el malvado Doctor Eggman y haciendo nuevos amigos. Desde su debut en 1991, ha sido un ícono de los videojuegos.</p>
-            <ul class="list-disc list-inside">
-                <li>1991: Primer juego de Sonic</li>
-                <li>1992: Sonic the Hedgehog 2</li>
-                <li>1994: Sonic & Knuckles</li>
-                <li>1998: Sonic Adventure</li>
-                <li>2017: Sonic Mania</li>
-            </ul>
-            <img src="https://via.placeholder.com/600x400?text=Historia+de+Sonic" alt="Sonic Historia" class="w-full h-auto mt-4">
-        </section>
-        
-        <section id="games" class="bg-white p-6 rounded-lg shadow-md mb-6">
-            <h2 class="text-2xl font-bold mb-4">Juegos</h2>
-            <p>Desde su debut en 1991, Sonic ha aparecido en numerosos videojuegos que abarcan diversas plataformas y géneros. Algunos de los más populares incluyen:</p>
-            <ol class="list-decimal list-inside">
-                <li>Sonic the Hedgehog</li>
-                <li>Sonic the Hedgehog 2</li>
-                <li>Sonic CD</li>
-                <li>Sonic Adventure</li>
-                <li>Sonic Generations</li>
-            </ol>
-            <img src="https://via.placeholder.com/600x400?text=Juegos+de+Sonic" alt="Sonic Juegos" class="w-full h-auto mt-4">
+            <div class="flex flex-row items-center justify-between p-4 mx-auto w-full">
+                <div class="full lg:w-2/3">
+                    <h2 class="text-3xl font-bold mb-3 text-align-center p-3 text-black">Introducción</h2>
+                    <p class="p-3 text-lg">Sonic es un erizo azul y el protagonista de la serie de videojuegos creada
+                        por Sega.
+                        Es conocido por
+                        su velocidad y espíritu aventurero. Es el protagonista principal de la serie Sonic the Hedgehog
+                        y la
+                        mascota de Sega . Es un erizo antropomórfico conocido por su capacidad de correr más rápido que
+                        la
+                        velocidad del sonido, de ahí su nombre. Como su especie lo indica, Sonic también puede
+                        enrollarse en
+                        una bola conmocionante, principalmente para atacar a los enemigos.</p>
+                    <p class="p-3 text-lg">Nacido en la Isla de Navidad , Sonic abandonó su hogar a temprana edad para
+                        emprender
+                        una vida de
+                        aventuras. Ha pasado la mayor parte de su vida viajando por todo el mundo y más allá,
+                        generalmente
+                        acompañado por su mejor amigo, Tails . En sus viajes, ha defendido su mundo y a otros de varias
+                        amenazas, especialmente su archienemigo, el Dr. Eggman .</p>
+                    <!-- Referencia de información: https://sonic.fandom.com/wiki/Sonic_the_Hedgehog -->
+                </div>
+                <div class="w-1/3 flex justify-end hidden md:block">
+                    <img src="img/Hero-sonic.webp" alt="Sonic" class=" h-30px">
+                </div>
+            </div>
+
         </section>
 
-        <section id="media" class="bg-white p-6 rounded-lg shadow-md">
-            <h2 class="text-2xl font-bold mb-4">Medios</h2>
-            <p>Además de los videojuegos, Sonic ha protagonizado series animadas, cómics y una película. Algunas de las apariciones más destacadas incluyen:</p>
-            <ul class="list-disc list-inside">
-                <li>Sonic SatAM (Serie animada)</li>
-                <li>Adventures of Sonic the Hedgehog (Serie animada)</li>
-                <li>Sonic X (Anime)</li>
-                <li>La película de Sonic (2020)</li>
-            </ul>
-            <img src="https://via.placeholder.com/600x400?text=Medios+de+Sonic" alt="Sonic Medios" class="w-full h-auto mt-4">
+        <section id="personajes" class="p-6 mb-6">
+            <h2 class="flex justify-center text-6xl font-bold mb-3 text-align-center p-3 text-white">Personajes</h2>
+            <!--Código en base al ejemplo de galería de la guía-->
+            <div class="grid gap-5 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
+                <!-- Sonic -->
+                <div class="relative group">
+                    <img src="img/fearless-tab-sonic.png" alt="sonic" class="w-90" />
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-70">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-lg font-bold">Sonic</p>
+                                <p class="text-xs font-justify">Sonic es la viva imagen de la libertad. ¡Es lo más
+                                    rápido que existe! Pasa la mayor parte de sus días explorando el mundo,
+                                    experimentando sus emociones y encontrando nuevos desafíos. Cuando no está corriendo
+                                    a toda velocidad, es probable que lo encuentres saboreando un hot dog con chile
+                                    mientras se relaja en la naturaleza.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Shadow -->
+                <div class="relative group">
+                    <img src="img/fearless-tab-shadow.png" alt="sonic" class="w-90" />
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-70">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-lg font-bold">Shadow</p>
+                                <p class="text-xs font-justify">Shadow es conocido como la forma de vida definitiva. Fue
+                                    creado por el profesor Gerald Robotnik (el abuelo del Dr. Eggman) como parte de una
+                                    compleja conspiración que involucra a los militares y a algunos alienígenas voraces.
+                                    Shadow tiene una velocidad increíble, una fuerza feroz y una habilidad poco común
+                                    llamada "Control del caos":al utilizar el poder de una esmeralda del caos, puede
+                                    detener el tiempo y parecer teletransportarse a una nueva posición instantáneamente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tails -->
+                <div class="relative group">
+                    <img src="img/fearless-tab-tails.png" alt="sonic" class="w-90" />
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-70">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-lg font-bold">Tails</p>
+                                <p class="text-xs">Tails es un joven zorro que está empezando a descubrir todo su
+                                    potencial. Es un genio de la mecánica y la invención, además de un aventurero veloz
+                                    y experimentado. También es un piloto experto con un garaje lleno de aviones de la
+                                    serie Tornado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Amy -->
+                <div class="relative group">
+                    <img src="img/fearless-tab-amy.png" alt="sonic" class="w-90" />
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-70">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-lg font-bold">Amy</p>
+                                <p class="text-xs">Amy es una aventurera atlética y llena de energía que desea compartir
+                                    su amor sin límites con el mundo. Maneja su martillo Piko Piko característico con
+                                    una fuerza y ​​una gracia increíbles para defender a quienes lo necesitan. Amy
+                                    conoció a Sonic por primera vez siguiendo la guía de sus cartas de la fortuna.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Knucles -->
+                <div class="relative group">
+                    <img src="img/fearless-tab-knuckles.png" alt="Knucles" class="w-90" />
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-70">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-lg font-bold">Knucles</p>
+                                <p class="text-xs">Knuckles es el guardián de la Master Emerald, una poderosa gema
+                                    vinculada a la historia del mundo. También protege su hogar, Angel Island, una isla
+                                    paradisíaca voladora. Atraviesa los variados y salvajes entornos de la Tierra con
+                                    una velocidad increíble y técnicas de planeo impresionantes, mientras que su
+                                    asombrosa fuerza le permite escalar o atravesar cualquier obstáculo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rouge -->
+                <div class="relative group">
+                    <img src="img/fearless-tab-rouge.png" alt="sonic" class="w-90" />
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-70">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-lg font-bold">Rouge</p>
+                                <p class="text-xs">Rouge es una verdadera experta y tenaz en todo. Es una espía
+                                    experta, una aviadora experta, una ladrona de joyas consumada, una luchadora
+                                    entrenada e incluso maneja armas de demolición personalizadas. ¡Algunas personas lo
+                                    tienen todo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Eggman-->
+                <div class="relative group">
+                    <img src="img/fearless-eggman.png" alt="sonic" class="w-90px" />
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-70">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-lg font-bold">Dr. Eggman</p>
+                                <p class="text-xs">El Dr. Ivo “Eggman” Robotnik es un mecánico y un genio sin igual. Su
+                                    sueño es conquistar el mundo y remodelarlo a su imagen. Para ello, construye enormes
+                                    ejércitos de robots y enormes flotas de naves de guerra. Esto significa que necesita
+                                    mucha energía para alimentar sus conquistas, por lo que a menudo busca las Chaos
+                                    Emeralds u otras fuentes de poder arcano.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Silver -->
+                <div class="relative group w-xs">
+                    <img src="img/silver.webp" alt="silver" class="" />
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-70">
+                        <div class="flex justify-between w-sm">
+                            <div class="font-normal">
+                                <p class="text-lg font-bold">Silver</p>
+                                <p class="text-xs"> Es un erizo antropomórfico que viaja en el tiempo desde doscientos
+                                    años hacia el futuro . Su objetivo es preservar la paz en su futuro resolviendo las
+                                    catástrofes del pasado, lo que resulta en interacciones frecuentes con Sonic y otros
+                                    habitantes de la época. Para sus misiones, Silver puede acceder a poderosas
+                                    habilidades psicoquinéticas, que en su época se consideran la norma, y ​​que le
+                                    permiten manipular objetos físicos con el poder de su mente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="games" class="bg-black p-3 rounded-lg shadow-md flex flex-col justify-evenly items-center">
+            <h2 class="flex justify-center text-6xl font-bold p-3 text-red-700 shadow-md hover:text-white">Juegos</h2>
+            <p class="flex justify-center p-3 text-white">Desde su debut en 1991, Sonic ha aparecido en numerosos
+                videojuegos que abarcan diversas
+                plataformas y
+                géneros. Algunos de los más populares incluyen:</p>
+            <!--Para hacer uso de este tipo de galeria se busco en internet, haciendo uso (con modificaciones) del siguiente código para galerias-->
+            <!--Referencia:https://flowbite.com/docs/components/gallery/-->
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg max-h-64 " src="img/sonic-1991.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg max-h-64"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg max-h-64"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg max-h-64"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg max-h-64"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg max-h-64"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg max-h-64"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg max-h-64"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg max-h-64"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg max-h-64"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <section id="media" class="">
+            <h2 class="flex justify-center text-6xl font-bold text-white mt-5 mb-4 p-3">Animaciones</h2>
+            <p class="text-white p-3 mb-5 flex justify-center">Además de los videojuegos, Sonic ha protagonizado series
+                animadas, cómics y
+                una película. Algunas de las
+                apariciones más destacadas incluyen:</p>
+
+            <!--Para esta galería tambien se utilizo código de la página anterior (con modificaciones)-->
+            <div class="grid gap-4">
+                <div>
+                    <img class="flex justify-center h-10o max-w-full rounded-lg" src="img/sonic-boom.jpeg" alt="">
+                </div>
+                <div class="grid grid-cols-5 gap-4">
+                    <div>
+                        <img class="h-20px max-w-full rounded-lg" src="img/Sonic_X_Serie_de_TV-962094115-large.jpg"
+                            alt="">
+                    </div>
+                    <div>
+                        <img class="h-20px max-w-full rounded-lg" src="img/sonic-prime.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-20px max-w-full rounded-lg" src="img/sonic2.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-20px max-w-full rounded-lg" src="img/onesheet.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-20px max-w-full rounded-lg" src="img/adventures-sonic.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+
+            </div>
         </section>
     </main>
 
-    <footer class="bg-sonic-blue text-white shadow w-full mt-auto">
+    <footer class="bg-black text-white shadow w-full mt-auto">
         <div class="container mx-auto p-5 text-center">
-            <p>&copy; 2025 Sonic - El Erizo. Todos los derechos reservados.</p>
-            <div class="animate-bounce mt-4">
-                <img src="https://via.placeholder.com/50x50?text=Sonic" alt="Sonic Saltando" class="w-16 h-auto mx-auto">
-            </div>
-            <div class="animate-spin mt-4">
-                <img src="https://via.placeholder.com/50x50?text=Anillo" alt="Anillo Girando" class="w-16 h-auto mx-auto">
+            <p>&copy; 2025 Sonic The Hedgehog. Fernanda Rubio</p>
+            <div class="mt-4">
+                <img src="img/3-sonic-wait1-60px.gif" alt="Sonic Saltando" class="w-16 h-auto mx-auto">
+                <img src="img/sega-logo.png" alt="sega-logo" class="w-16 h-auto mx-auto">
             </div>
         </div>
     </footer>
-
-    <style>
-        @media (min-width: 640px) {
-            main {
-                padding: 10px;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            main {
-                padding: 20px;
-            }
-
-            section {
-                margin-bottom: 8px;
-            }
-        }
-    </style>
 </body>
+
 </html>
