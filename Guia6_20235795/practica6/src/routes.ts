@@ -22,5 +22,4 @@ router.post('/auth/register', [
     body("email").isEmail().withMessage("Invalid email"),
     body("username").isString().notEmpty().withMessage("Username is required")], async (req, res) => {(createAccount(req, res));}
 );
-
 export default router;
